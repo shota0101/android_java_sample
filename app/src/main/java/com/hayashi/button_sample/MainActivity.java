@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Dog pottyakko = new Dog(); // インスタンスの生成
+        pottyakko.bark();
+        pottyakko.setName("ぽちゃっこ");
+        pottyakko.setAge(-3);
+        pottyakko.selfIntroduction();
+
         button = (Button) findViewById(R.id.button_test);
         // ボタンがクリックされた時に呼び出されるコールバックリスナーを登録します
         button.setOnClickListener(new View.OnClickListener() {
